@@ -94,7 +94,7 @@ class ViewCommand extends Command
 				}
 			}
 
-			copy(module_path("ViewManager", "stub/{$key}"), $view);
+			copy(module_path("ViewManager", "stubs/{$key}"), $view);
 		}
 	}
 
