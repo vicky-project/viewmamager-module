@@ -1,0 +1,12 @@
+{
+	"name": "ViewManager",
+	"alias": "viewmanager",
+	"description": "",
+	"keywords": [],
+	"priority": 0,
+	"providers": [
+		"Modules\\ViewManager\\Providers\\ViewManagerServiceProvider",
+		"Modules\\ViewManager\\Providers\\RouteServiceProvider"
+	],
+	"files": ["app/Helpers/theme.php"]
+}
