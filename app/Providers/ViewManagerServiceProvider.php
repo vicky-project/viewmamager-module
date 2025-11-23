@@ -16,14 +16,13 @@ class ViewManagerServiceProvider extends ServiceProvider
 		$this->app->singleton("viewmanager", function () {
 			return new ViewManagerService();
 		});
-
-		$this->commands([ViewCommand::class]);
 	}
 
 	public function boot()
 	{
 		$this->registerViews();
 		$this->registerViewComposers();
+		$this->commands([ViewCommand::class]);
 	}
 
 	protected function registerViews()
