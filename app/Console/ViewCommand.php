@@ -11,7 +11,7 @@ class ViewCommand extends Command
 	/**
 	 * The name and signature of the console command.
 	 */
-	protected $signature = "view:install";
+	protected $signature = "view:install {--force : Overwriting existing views by default.}";
 
 	/**
 	 * The console command description.
