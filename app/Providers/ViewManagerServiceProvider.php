@@ -4,6 +4,7 @@ namespace Modules\ViewManager\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\View;
+use Modules\ViewManager\Console\ViewCommand;
 
 class ViewManagerServiceProvider extends ServiceProvider
 {
@@ -14,6 +15,8 @@ class ViewManagerServiceProvider extends ServiceProvider
 		$this->app->singleton("viewmanager", function () {
 			return new \Modules\ViewManager\Services\ViewManagerService();
 		});
+
+		$this->commands([ViewCommand::class]);
 	}
 
 	public function boot()
