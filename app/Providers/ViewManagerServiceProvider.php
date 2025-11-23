@@ -4,6 +4,7 @@ namespace Modules\ViewManager\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\View;
+use Modules\ViewManager\Services\ViewManagerService;
 use Modules\ViewManager\Console\ViewCommand;
 
 class ViewManagerServiceProvider extends ServiceProvider
@@ -13,7 +14,7 @@ class ViewManagerServiceProvider extends ServiceProvider
 		$this->mergeConfigFrom(__DIR__ . "/../../config/config.php", "viewmanager");
 
 		$this->app->singleton("viewmanager", function () {
-			return new \Modules\ViewManager\Services\ViewManagerService();
+			return new ViewManagerService();
 		});
 
 		$this->commands([ViewCommand::class]);
