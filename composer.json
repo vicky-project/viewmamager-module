@@ -2,7 +2,7 @@
 	"name": "vicky-project/viewmanager-module",
 	"description": "View Manager Module",
 	"type": "laravel-module",
-	"version": "1.0.5",
+	"license": "MIT",
 	"autoload": {
 		"psr-4": {
 			"Modules\\ViewManager\\": "app/"
