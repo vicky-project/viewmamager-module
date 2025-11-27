@@ -37,7 +37,7 @@
     <script src="{{ asset('js/config.js') }}"></script>
     <script src="{{ asset('js/color-modes.js') }}"></script>
     <link href="{{ asset('vendors/@coreui/chartjs/css/coreui-chartjs.css') }}" rel="stylesheet">
-    
+    @yield('styles')
 </head>
 <body>
   @include('viewmanager::components.sidebar')
