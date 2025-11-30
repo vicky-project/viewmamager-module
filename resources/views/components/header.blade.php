@@ -11,10 +11,13 @@
       <li class="nav-item"><a class="nav-link" href="#">Settings</a></li>
     </ul>
     <ul class="header-nav ms-auto">
-      <li class="nav-item"><a class="nav-link" href="#">
-        <svg class="icon icon-lg">
-          <use xlink:href="{{ asset('vendors/@coreui/icons/svg/free.svg#cil-bell') }}"></use>
-        </svg></a></li>
+      <li class="nav-item">
+        <a class="nav-link" href="{{ route("viewmanager.notifications.show") }}">
+          <svg class="icon icon-lg">
+            <use xlink:href="{{ asset('vendors/@coreui/icons/svg/free.svg#cil-bell') }}"></use>
+          </svg>
+        </a>
+      </li>
       <li class="nav-item"><a class="nav-link" href="#">
         <svg class="icon icon-lg">
           <use xlink:href="{{ asset('vendors/@coreui/icons/svg/free.svg#cil-list-rich') }}"></use>

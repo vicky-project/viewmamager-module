@@ -13,6 +13,8 @@ class PostInstallation
 			$module->enable();
 
 			Artisan::call("view:install", ["--force" => true]);
+			Artisan::call("make:notifications-table");
+			Artisan::call("migrate", ["--force" => true]);
 		} catch (\Exception $e) {
 			logger()->error(
 				"Failed to running post installation of view mamager: " .
